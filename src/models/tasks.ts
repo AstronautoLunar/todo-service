@@ -69,6 +69,12 @@ function verifyBodyTask({ id, text, type }:VerifyBodyTaskProps) {
     }
 }
 
+function deleteTaskId(id:string) {
+    const newTasks = data.tasks.filter(item => item.id !== id);
+
+    data.tasks = newTasks;
+}
+
 export const getAll = (request, response) => {
     response.json(JSON.stringify(data));
 }
@@ -132,6 +138,8 @@ export const deleteTask = (request, response) => {
     if(isIdNumber || isIdBoolean) {
         response.status(400).send("Tipo id invalido para remoção de tarefa");
     } else {
-        
+        deleteTaskId(id);
+
+        response.status(200).send("Deletado com sucesso");
     }
 }
