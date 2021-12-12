@@ -1,0 +1,22 @@
+{
+    "tasks": [
+        {
+            "id": "fasdofsafaf",
+            "text": "Varrer a casa",
+            "date": "2021/06/08",
+            "completed": false
+        },
+        {
+            "id": "fasdofeafaf",
+            "text": "Comer",
+            "date": "2021/08/08",
+            "completed": false
+        },
+        {
+            "id": "fasdossafaf",
+            "text": "Limpar estante",
+            "date": "2021/12/08",
+            "completed": false
+        }
+    ]
+}
